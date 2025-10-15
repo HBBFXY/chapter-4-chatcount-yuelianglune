@@ -1,24 +1,25 @@
 def main():
-    s = input()
+    input_string = input()
+    filtered_string = ''
+    for char in input_string:
+        if char != "'":
+            filtered_string += char
+            
     letters = 0
     digits = 0
     spaces = 0
     others = 0
     
-    for char in s:
-        # 检查是否为英文字母
-        if ('a' <= char <= 'z') or ('A' <= char <= 'Z'):
+    for char in filtered_string:
+        if 'a' <= char <= 'z' or 'A' <= char <= 'Z':
             letters += 1
-        # 检查是否为数字
         elif '0' <= char <= '9':
             digits += 1
-        # 检查是否为空格
         elif char == ' ':
             spaces += 1
-        # 其他字符
         else:
             others += 1
-    
+            
     print(f"英文字符: {letters}")
     print(f"数字: {digits}")
     print(f"空格: {spaces}")
