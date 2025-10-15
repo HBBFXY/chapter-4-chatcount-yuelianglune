@@ -14,9 +14,6 @@ def main():
         # 英文字符（包括大小写字母）
         if ('a' <= char <= 'z') or ('A' <= char <= 'Z'):
             letters += 1
-        # 中文字符（Unicode范围）
-        elif ('\u4e00' <= char <= '\u9fff'):
-            letters += 1
         # 数字
         elif '0' <= char <= '9':
             digits += 1
