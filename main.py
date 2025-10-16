@@ -1,5 +1,5 @@
 def characters():
-    text = input("请输入一行字符：")
+    text = input()
 
     char_len = 0
     digits = 0
