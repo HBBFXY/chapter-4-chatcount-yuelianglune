@@ -1,5 +1,5 @@
 def characters():
-    text = input()
+    text = input('')
 
     char_len = 0
     digits = 0
