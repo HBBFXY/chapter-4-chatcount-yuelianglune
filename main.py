@@ -21,10 +21,10 @@ def characters():
         else:
             others += 1
     
-    print(f"英文字符个数：{char_len}")
-    print(f"数字个数：{digits}")
-    print(f"空格个数：{spaces}")
-    print(f"其他字符个数：{others}")
+    print(f"英文字符：{char_len}")
+    print(f"数字：{digits}")
+    print(f"空格：{spaces}")
+    print(f"其他字符：{others}")
 
 if __name__ == "__main__":
     characters()
